@@ -1,0 +1,155 @@
+{
+  "model": "qwen3:8b",
+  "generatedAt": "2026-09-27T08:13:04.746Z",
+  "totalTests": 20,
+  "passed": 20,
+  "failed": 0,
+  "passRate": 100,
+  "averageDurationMs": 46502,
+  "fastestMs": 10939,
+  "slowestMs": 83283,
+  "totalDurationMs": 930084,
+  "apiCostUSD": 0,
+  "results": [
+    {
+      "id": "T001",
+      "question": "1001번 주문 상태 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 83283
+    },
+    {
+      "id": "T005",
+      "question": "1001번 지금 배송 중이야?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 37491
+    },
+    {
+      "id": "T010",
+      "question": "1001번 주문 진행 상황 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 71022
+    },
+    {
+      "id": "T018",
+      "question": "1001번 주문 정보 부탁해",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 39886
+    },
+    {
+      "id": "T021",
+      "question": "1002번 주문 상태 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 52182
+    },
+    {
+      "id": "T025",
+      "question": "1002번 지금 배송됐어?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 55484
+    },
+    {
+      "id": "T030",
+      "question": "1002번 주문 진행 상황 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 69984
+    },
+    {
+      "id": "T038",
+      "question": "1002번 주문 정보 부탁해",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 50981
+    },
+    {
+      "id": "T041",
+      "question": "1003번 주문 상태 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 48337
+    },
+    {
+      "id": "T045",
+      "question": "1003번 지금 어떤 상태야?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 50676
+    },
+    {
+      "id": "T050",
+      "question": "1003번 주문 진행 상황 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 48784
+    },
+    {
+      "id": "T058",
+      "question": "1003번 주문 정보 부탁해",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 52376
+    },
+    {
+      "id": "T061",
+      "question": "9999번 주문 상태 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 46957
+    },
+    {
+      "id": "T065",
+      "question": "9999번 주문 확인해줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 48281
+    },
+    {
+      "id": "T070",
+      "question": "주문 9999 확인",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 45831
+    },
+    {
+      "id": "T078",
+      "question": "9999 상태 좀 봐줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 46551
+    },
+    {
+      "id": "T081",
+      "question": "오늘 기분이 어때?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 35587
+    },
+    {
+      "id": "T085",
+      "question": "너는 누구야?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 19621
+    },
+    {
+      "id": "T090",
+      "question": "안녕",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 10939
+    },
+    {
+      "id": "T098",
+      "question": "축구 좋아해?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 15792
+    }
+  ]
+}

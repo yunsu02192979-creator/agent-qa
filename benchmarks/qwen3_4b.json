@@ -1,0 +1,85 @@
+{
+  "model": "qwen3:4b",
+  "generatedAt": "2026-09-27T05:25:46.230Z",
+  "totalTests": 10,
+  "passed": 9,
+  "failed": 1,
+  "passRate": 90,
+  "averageDurationMs": 324166,
+  "fastestMs": 184159,
+  "slowestMs": 423493,
+  "totalDurationMs": 3241681,
+  "apiCostUSD": 0,
+  "results": [
+    {
+      "id": "T001",
+      "question": "1001번 주문 상태 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 346115
+    },
+    {
+      "id": "T002",
+      "question": "1001 주문 어디까지 왔어?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 385458
+    },
+    {
+      "id": "T003",
+      "question": "주문번호 1001 조회해줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 383920
+    },
+    {
+      "id": "T004",
+      "question": "1001 배송 상황 알려줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 395109
+    },
+    {
+      "id": "T005",
+      "question": "1001번 지금 배송 중이야?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 319535
+    },
+    {
+      "id": "T006",
+      "question": "1001 주문 확인해줘",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 247010
+    },
+    {
+      "id": "T007",
+      "question": "내 주문 1001 상태가 뭐야?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 184159
+    },
+    {
+      "id": "T008",
+      "question": "1001번 상품은 어디쯤 왔어?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 367928
+    },
+    {
+      "id": "T009",
+      "question": "1001 배송 완료됐어?",
+      "pass": true,
+      "failedChecks": [],
+      "durationMs": 188935
+    },
+    {
+      "id": "T010",
+      "question": "1001번 주문 진행 상황 알려줘",
+      "pass": false,
+      "durationMs": 423493,
+      "error": "fetch failed"
+    }
+  ]
+}

@@ -1,0 +1,5130 @@
+{
+  "generatedAt": "2026-09-26T15:12:28.525Z",
+  "totalTests": 100,
+  "passedTests": 100,
+  "failedTests": 0,
+  "passRate": 100,
+  "averageDurationMs": 44611,
+  "results": [
+    {
+      "id": "T001",
+      "category": "valid-order",
+      "question": "1001번 주문 상태 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 104429,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T002",
+      "category": "valid-order",
+      "question": "1001 주문 어디까지 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 51673,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상품인 검은색 운동화는 현재 '배송 중' 상태입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상품인 검은색 운동화는 현재 '배송 중' 상태입니다."
+    },
+    {
+      "id": "T003",
+      "category": "valid-order",
+      "question": "주문번호 1001 조회해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 48454,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T004",
+      "category": "valid-order",
+      "question": "1001 배송 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 47098,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 배송 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 배송 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T005",
+      "category": "valid-order",
+      "question": "1001번 지금 배송 중이야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 48424,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T006",
+      "category": "valid-order",
+      "question": "1001 주문 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 45454,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T007",
+      "category": "valid-order",
+      "question": "내 주문 1001 상태가 뭐야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 69527,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T008",
+      "category": "valid-order",
+      "question": "1001번 상품은 어디쯤 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 49657,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상품인 검은색 운동화는 현재 **배송 중** 상태입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상품인 검은색 운동화는 현재 **배송 중** 상태입니다."
+    },
+    {
+      "id": "T009",
+      "category": "valid-order",
+      "question": "1001 배송 완료됐어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50653,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 배송 상태는 \"배송 중\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 배송 상태는 \"배송 중\"입니다."
+    },
+    {
+      "id": "T010",
+      "category": "valid-order",
+      "question": "1001번 주문 진행 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 68079,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 진행 상황은 다음과 같습니다:\n\n- **고객명**: 김민수  \n- **상품명**: 검은색 운동화  \n- **배송 상태**: 배송 중  \n\n추가로 궁금한 점이 있으면 언제든지 문의해 주세요!",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 진행 상황은 다음과 같습니다:\n\n- **고객명**: 김민수  \n- **상품명**: 검은색 운동화  \n- **배송 상태**: 배송 중  \n\n추가로 궁금한 점이 있으면 언제든지 문의해 주세요!"
+    },
+    {
+      "id": "T011",
+      "category": "valid-order",
+      "question": "주문 1001 확인",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 45275,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T012",
+      "category": "valid-order",
+      "question": "1001 상태 조회",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 58214,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T013",
+      "category": "valid-order",
+      "question": "1001번 택배 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 72713,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T014",
+      "category": "valid-order",
+      "question": "1001 주문 아직 안 왔어. 상태 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 59297,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T015",
+      "category": "valid-order",
+      "question": "1001번 주문이 지금 어떤 상태야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 46379,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T016",
+      "category": "valid-order",
+      "question": "1001 조회 가능해?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 43206,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 \"배송 중\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 \"배송 중\"입니다."
+    },
+    {
+      "id": "T017",
+      "category": "valid-order",
+      "question": "1001 주문 배송됐는지 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 46394,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상품인 검은색 운동화는 현재 \"배송 중\" 상태입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상품인 검은색 운동화는 현재 \"배송 중\" 상태입니다."
+    },
+    {
+      "id": "T018",
+      "category": "valid-order",
+      "question": "1001번 주문 정보 부탁해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50219,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T019",
+      "category": "valid-order",
+      "question": "1001 상태 좀 봐줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 54117,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "주문번호 1001의 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1001의 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T020",
+      "category": "valid-order",
+      "question": "1001번 주문의 현재 배송 상태가 궁금해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 76133,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1001",
+          "actual": "1001",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 중",
+          "actual": "배송 중",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 중",
+          "actual": "1001번 주문의 현재 배송 상태는 **배송 중**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1001"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1001",
+            "customer": "김민수",
+            "product": "검은색 운동화",
+            "status": "배송 중"
+          }
+        }
+      ],
+      "finalAnswer": "1001번 주문의 현재 배송 상태는 **배송 중**입니다."
+    },
+    {
+      "id": "T021",
+      "category": "valid-order",
+      "question": "1002번 주문 상태 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 52496,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T022",
+      "category": "valid-order",
+      "question": "1002 주문 어디까지 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 48877,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T023",
+      "category": "valid-order",
+      "question": "주문번호 1002 조회해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 46795,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T024",
+      "category": "valid-order",
+      "question": "1002 배송 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50630,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 배송 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 배송 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T025",
+      "category": "valid-order",
+      "question": "1002번 지금 배송됐어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 46595,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T026",
+      "category": "valid-order",
+      "question": "1002 주문 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 64390,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T027",
+      "category": "valid-order",
+      "question": "내 주문 1002 상태가 뭐야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 64193,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T028",
+      "category": "valid-order",
+      "question": "1002번 상품은 어디쯤 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 48629,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T029",
+      "category": "valid-order",
+      "question": "1002 배송 완료됐어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 39458,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 배송 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 배송 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T030",
+      "category": "valid-order",
+      "question": "1002번 주문 진행 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 54429,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 진행 상황은 다음과 같습니다:\n\n- **고객명**: 이서준  \n- **상품명**: 단백질 보충제  \n- **주문 상태**: 배송 완료",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 진행 상황은 다음과 같습니다:\n\n- **고객명**: 이서준  \n- **상품명**: 단백질 보충제  \n- **주문 상태**: 배송 완료"
+    },
+    {
+      "id": "T031",
+      "category": "valid-order",
+      "question": "주문 1002 확인",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 38367,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T032",
+      "category": "valid-order",
+      "question": "1002 상태 조회",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 44569,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T033",
+      "category": "valid-order",
+      "question": "1002번 택배 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 45003,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T034",
+      "category": "valid-order",
+      "question": "1002 주문 아직 안 왔어. 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 56673,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T035",
+      "category": "valid-order",
+      "question": "1002번 주문이 지금 어떤 상태야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 42624,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "1002번 주문의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "1002번 주문의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T036",
+      "category": "valid-order",
+      "question": "1002 조회 가능해?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 40011,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T037",
+      "category": "valid-order",
+      "question": "1002 주문 배송됐는지 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 42223,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 배송 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 배송 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T038",
+      "category": "valid-order",
+      "question": "1002번 주문 정보 부탁해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 38626,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T039",
+      "category": "valid-order",
+      "question": "1002 상태 좀 봐줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 41668,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T040",
+      "category": "valid-order",
+      "question": "1002번 주문의 현재 배송 상태가 궁금해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50846,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1002",
+          "actual": "1002",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "배송 완료",
+          "actual": "배송 완료",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "배송 완료",
+          "actual": "주문번호 1002의 배송 상태는 **배송 완료**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1002"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1002",
+            "customer": "이서준",
+            "product": "단백질 보충제",
+            "status": "배송 완료"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1002의 배송 상태는 **배송 완료**입니다."
+    },
+    {
+      "id": "T041",
+      "category": "valid-order",
+      "question": "1003번 주문 상태 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 62347,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "1003번 주문의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "1003번 주문의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T042",
+      "category": "valid-order",
+      "question": "1003 주문 어디까지 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 45822,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T043",
+      "category": "valid-order",
+      "question": "주문번호 1003 조회해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 42546,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T044",
+      "category": "valid-order",
+      "question": "1003 배송 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 43849,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 배송 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 배송 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T045",
+      "category": "valid-order",
+      "question": "1003번 지금 어떤 상태야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 44829,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T046",
+      "category": "valid-order",
+      "question": "1003 주문 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 43119,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T047",
+      "category": "valid-order",
+      "question": "내 주문 1003 상태가 뭐야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 56144,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T048",
+      "category": "valid-order",
+      "question": "1003번 상품은 어디쯤 왔어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 82747,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "1003번 주문의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "1003번 주문의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T049",
+      "category": "valid-order",
+      "question": "1003 주문 처리됐어?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 39934,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T050",
+      "category": "valid-order",
+      "question": "1003번 주문 진행 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 42437,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "1003번 주문의 진행 상황은 \"주문 확인\" 상태입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "1003번 주문의 진행 상황은 \"주문 확인\" 상태입니다."
+    },
+    {
+      "id": "T051",
+      "category": "valid-order",
+      "question": "주문 1003 확인",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 51869,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T052",
+      "category": "valid-order",
+      "question": "1003 상태 조회",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50442,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T053",
+      "category": "valid-order",
+      "question": "1003번 주문 상황 알려줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 42740,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "1003번 주문의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "1003번 주문의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T054",
+      "category": "valid-order",
+      "question": "1003 주문 확인 좀 해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 40143,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T055",
+      "category": "valid-order",
+      "question": "1003번 주문이 지금 어떤 상태야?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 81833,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T056",
+      "category": "valid-order",
+      "question": "1003 조회 가능해?",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 50556,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T057",
+      "category": "valid-order",
+      "question": "1003 주문 처리 상황 확인해줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 70955,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 주문 처리 상황은 다음과 같습니다:\n\n- **고객명**: 박지훈  \n- **상품명**: 무선 마우스  \n- **주문 상태**: 주문 확인  \n\n추가로 궁금한 점이 있으면 언제든지 문의해 주세요!",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 주문 처리 상황은 다음과 같습니다:\n\n- **고객명**: 박지훈  \n- **상품명**: 무선 마우스  \n- **주문 상태**: 주문 확인  \n\n추가로 궁금한 점이 있으면 언제든지 문의해 주세요!"
+    },
+    {
+      "id": "T058",
+      "category": "valid-order",
+      "question": "1003번 주문 정보 부탁해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 48337,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 주문 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 주문 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T059",
+      "category": "valid-order",
+      "question": "1003 상태 좀 봐줘",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 47328,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 \"주문 확인\"입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 \"주문 확인\"입니다."
+    },
+    {
+      "id": "T060",
+      "category": "valid-order",
+      "question": "1003번 주문 상태가 궁금해",
+      "pass": true,
+      "passedChecks": 6,
+      "totalChecks": 6,
+      "durationMs": 47881,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "1003",
+          "actual": "1003",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_status",
+          "expected": "주문 확인",
+          "actual": "주문 확인",
+          "pass": true
+        },
+        {
+          "name": "answer_contains_status",
+          "expected": "주문 확인",
+          "actual": "주문번호 1003의 상태는 **주문 확인**입니다.",
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "1003"
+          },
+          "result": {
+            "success": true,
+            "orderId": "1003",
+            "customer": "박지훈",
+            "product": "무선 마우스",
+            "status": "주문 확인"
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 1003의 상태는 **주문 확인**입니다."
+    },
+    {
+      "id": "T061",
+      "category": "invalid-order",
+      "question": "9999번 주문 상태 알려줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 67794,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T062",
+      "category": "invalid-order",
+      "question": "9999 주문 어디까지 왔어?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 64686,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T063",
+      "category": "invalid-order",
+      "question": "주문번호 9999 조회해줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 40227,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T064",
+      "category": "invalid-order",
+      "question": "9999 배송 상황 알려줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 48262,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T065",
+      "category": "invalid-order",
+      "question": "9999번 주문 확인해줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 42347,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "해당 주문번호(9999)는 존재하지 않습니다."
+    },
+    {
+      "id": "T066",
+      "category": "invalid-order",
+      "question": "9999 상태가 뭐야?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 41966,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T067",
+      "category": "invalid-order",
+      "question": "9999번 상품 어디 있어?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 40429,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문을 찾을 수 없습니다."
+    },
+    {
+      "id": "T068",
+      "category": "invalid-order",
+      "question": "9999 배송 완료됐어?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 53642,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T069",
+      "category": "invalid-order",
+      "question": "9999번 주문 진행 상황 알려줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 62796,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T070",
+      "category": "invalid-order",
+      "question": "주문 9999 확인",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 38737,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T071",
+      "category": "invalid-order",
+      "question": "9999 상태 조회",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 38092,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T072",
+      "category": "invalid-order",
+      "question": "9999번 택배 상황 알려줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 38357,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T073",
+      "category": "invalid-order",
+      "question": "9999 주문이 안 보여. 확인해줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 38808,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T074",
+      "category": "invalid-order",
+      "question": "9999번 주문이 지금 어떤 상태야?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 43139,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T075",
+      "category": "invalid-order",
+      "question": "9999 조회 가능해?",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 38812,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문을 찾을 수 없습니다."
+    },
+    {
+      "id": "T076",
+      "category": "invalid-order",
+      "question": "9999 주문 배송 확인해줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 67110,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T077",
+      "category": "invalid-order",
+      "question": "9999번 주문 정보 부탁해",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 48077,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T078",
+      "category": "invalid-order",
+      "question": "9999 상태 좀 봐줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 39507,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T079",
+      "category": "invalid-order",
+      "question": "주문번호가 9999인데 조회해줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 42364,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T080",
+      "category": "invalid-order",
+      "question": "9999번 주문을 찾아줘",
+      "pass": true,
+      "passedChecks": 4,
+      "totalChecks": 4,
+      "durationMs": 35457,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "name": "tool_name",
+          "expected": "get_order_status",
+          "actual": "get_order_status",
+          "pass": true
+        },
+        {
+          "name": "order_id",
+          "expected": "9999",
+          "actual": "9999",
+          "pass": true
+        },
+        {
+          "name": "tool_success",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [
+        {
+          "name": "get_order_status",
+          "arguments": {
+            "orderId": "9999"
+          },
+          "result": {
+            "success": false,
+            "error": "주문을 찾을 수 없습니다."
+          }
+        }
+      ],
+      "finalAnswer": "주문번호 9999는 존재하지 않습니다."
+    },
+    {
+      "id": "T081",
+      "category": "irrelevant",
+      "question": "오늘 기분이 어때?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 29795,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 AI로 오늘의 기분은 없지만, 고객님의 기분이 궁금해요! 오늘 하루는 어떻게 보내셨나요? 😊"
+    },
+    {
+      "id": "T082",
+      "category": "irrelevant",
+      "question": "서울 날씨 알려줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 20174,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 주문 상태 확인을 도와드리는 AI입니다. 서울 날씨에 대한 정보는 제공할 수 없습니다. 도움이 필요하시면 주문번호를 알려주세요!"
+    },
+    {
+      "id": "T083",
+      "category": "irrelevant",
+      "question": "1 더하기 1은 뭐야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 8091,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "1 더하기 1은 2야."
+    },
+    {
+      "id": "T084",
+      "category": "irrelevant",
+      "question": "재미있는 이야기 해줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 24380,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 쇼핑몰 고객 지원 AI이기 때문에 재미있는 이야기를 해드릴 수는 없어요. 하지만 주문 상태를 확인하거나 배송 관련 질문이 있으시면 언제든지 도와드릴게요! 😊"
+    },
+    {
+      "id": "T085",
+      "category": "irrelevant",
+      "question": "너는 누구야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 17199,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 쇼핑몰 고객지원 AI입니다. 주문 상태나 배송 정보 등을 도와드릴 수 있습니다. 도움이 필요하시면 주문번호를 알려주세요!"
+    },
+    {
+      "id": "T086",
+      "category": "irrelevant",
+      "question": "고양이는 왜 귀여워?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 76111,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "고양이는 귀여운 이유는 다양합니다. 예를 들어, 고양이는 작은 몸통과 큰 눈, 부드러운 털, 그리고 다양한 표정을 할 수 있는 얼굴 구조로 인해 사람들의 마음을 사로잡습니다. 또한, 고양이는 독립적이면서도 애정을 주면 매우 충성스럽고, 사람과의 상호작용에서 따뜻한 감정을 줄 수 있어 많은 사람들에게 사랑받습니다."
+    },
+    {
+      "id": "T087",
+      "category": "irrelevant",
+      "question": "점심 뭐 먹을까?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 23015,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "주문 관련 문의는 아니네요. 점심 메뉴 추천이나 다른 궁금한 점이 있으신가요? 😊"
+    },
+    {
+      "id": "T088",
+      "category": "irrelevant",
+      "question": "영어 공부 방법 알려줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 19414,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 쇼핑몰 고객 지원 AI입니다. 영어 공부 방법에 대한 질문은 제가 제공할 수 있는 도구나 정보가 아닙니다. 다른 질문이 있으신가요?"
+    },
+    {
+      "id": "T089",
+      "category": "irrelevant",
+      "question": "운동 추천해줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 29591,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 운동 추천을 해드릴 수 있어요! 어떤 목표를 가지고 계신가요? 예를 들어, 체중 감량, 근력 향상, 건강 관리 등이 있으면 더 정확한 추천을 드릴 수 있어요."
+    },
+    {
+      "id": "T090",
+      "category": "irrelevant",
+      "question": "안녕",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 12301,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "안녕하세요! 도움이 필요하시면 언제든지 말씀해주세요. 😊"
+    },
+    {
+      "id": "T091",
+      "category": "irrelevant",
+      "question": "고마워",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 10656,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "안녕하세요! 도움이 필요하시면 언제든지 말씀해주세요. 😊"
+    },
+    {
+      "id": "T092",
+      "category": "irrelevant",
+      "question": "오늘 무슨 요일이야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 7160,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "오늘은 수요일이야!"
+    },
+    {
+      "id": "T093",
+      "category": "irrelevant",
+      "question": "노래 추천해줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 18983,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 쇼핑몰 고객지원 AI이기 때문에 노래 추천을 할 수 없습니다. 도움이 필요하시면 주문번호나 배송 관련 질문을 주세요!"
+    },
+    {
+      "id": "T094",
+      "category": "irrelevant",
+      "question": "영화 추천해줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 16571,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 영화 추천을 제공하는 기능이 없어요. 영화에 대한 질문이 있으시면, 다른 채널에서 도와드릴 수 있어요!"
+    },
+    {
+      "id": "T095",
+      "category": "irrelevant",
+      "question": "잠이 안 와",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 15283,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 쇼핑몰 고객지원 AI입니다. 주문 상태나 배송 관련 질문이 있으신가요?"
+    },
+    {
+      "id": "T096",
+      "category": "irrelevant",
+      "question": "컴퓨터가 뭐야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 20711,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "컴퓨터는 전자기기로, 데이터를 처리하고 다양한 작업을 수행할 수 있는 장치입니다. 필요하신다면 더 자세히 설명해 드릴 수 있어요!"
+    },
+    {
+      "id": "T097",
+      "category": "irrelevant",
+      "question": "AI가 뭐야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 14444,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "안녕하세요! 고객님의 질문에 도움을 드리겠습니다. 무엇을 도와드릴까요?"
+    },
+    {
+      "id": "T098",
+      "category": "irrelevant",
+      "question": "축구 좋아해?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 13809,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "저는 축구를 좋아하는 AI입니다! 어떤 경기나 선수에 대해 이야기하고 싶으신가요?"
+    },
+    {
+      "id": "T099",
+      "category": "irrelevant",
+      "question": "한국의 수도가 어디야?",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 3475,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "서울입니다."
+    },
+    {
+      "id": "T100",
+      "category": "irrelevant",
+      "question": "짧은 농담 하나 해줘",
+      "pass": true,
+      "passedChecks": 1,
+      "totalChecks": 1,
+      "durationMs": 20963,
+      "checks": [
+        {
+          "name": "tool_called",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "toolCalls": [],
+      "finalAnswer": "물론이죠! 여기 있습니다:\n\n\"왜 수학 선생님이 유명한가요?  \n왜냐하면 그는 항상 문제를 '해결'하니까요! 😄\""
+    }
+  ]
+}

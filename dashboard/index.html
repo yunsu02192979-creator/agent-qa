@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    AI Agent QA Dashboard
+  </title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+
+      font-family:
+        Arial,
+        "Noto Sans KR",
+        sans-serif;
+
+      background:
+        #f4f6f8;
+
+      color:
+        #111827;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 32px;
+    }
+
+    h1 {
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(210px, 1fr)
+        );
+
+      gap: 16px;
+
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+
+      border-radius: 14px;
+
+      padding: 20px;
+
+      box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.08);
+    }
+
+    .label {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .value {
+      margin-top: 8px;
+
+      font-size: 32px;
+
+      font-weight: bold;
+    }
+
+    .good {
+      color: #059669;
+    }
+
+    .warning {
+      color: #d97706;
+    }
+
+    .bad {
+      color: #dc2626;
+    }
+
+    table {
+      width: 100%;
+
+      border-collapse:
+        collapse;
+
+      background:
+        white;
+    }
+
+    th,
+    td {
+      padding: 14px;
+
+      border-bottom:
+        1px solid #e5e7eb;
+
+      text-align: left;
+    }
+
+    th {
+      background:
+        #f9fafb;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      margin-bottom: 12px;
+    }
+
+    .status {
+      display:
+        inline-block;
+
+      padding:
+        4px 9px;
+
+      border-radius:
+        999px;
+
+      font-size:
+        13px;
+
+      font-weight:
+        bold;
+    }
+
+    .status-pass {
+      background:
+        #d1fae5;
+
+      color:
+        #065f46;
+    }
+
+    .status-fail {
+      background:
+        #fee2e2;
+
+      color:
+        #991b1b;
+    }
+
+    .bar {
+      width: 100%;
+
+      height: 16px;
+
+      border-radius:
+        999px;
+
+      background:
+        #e5e7eb;
+
+      overflow:
+        hidden;
+
+      margin-top: 8px;
+    }
+
+    .bar-inner {
+      height: 100%;
+
+      background:
+        #111827;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    button {
+      padding:
+        10px 16px;
+
+      border: 0;
+
+      border-radius:
+        8px;
+
+      background:
+        #111827;
+
+      color: white;
+
+      cursor: pointer;
+    }
+
+    @media print {
+      button {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
+      .card {
+        box-shadow: none;
+
+        border:
+          1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>
+    AI Agent QA Dashboard
+  </h1>
+
+  <div class="subtitle">
+    Automated Agent Quality,
+    Regression and Security Report
+  </div>
+
+  <button
+    onclick="window.print()"
+  >
+    고객용 리포트 인쇄 / PDF 저장
+  </button>
+
+  <section>
+    <h2 class="section-title">
+      전체 품질 현황
+    </h2>
+
+    <div
+      class="grid"
+      id="summaryCards"
+    >
+    </div>
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      모델 비교
+    </h2>
+
+    <table>
+
+      <thead>
+
+        <tr>
+          <th>모델</th>
+          <th>테스트</th>
+          <th>통과율</th>
+          <th>평균시간</th>
+          <th>실패</th>
+        </tr>
+
+      </thead>
+
+      <tbody
+        id="benchmarkTable"
+      >
+      </tbody>
+
+    </table>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      보안 검사
+    </h2>
+
+    <div
+      class="grid"
+      id="securityCards"
+    >
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      최근 실패 테스트
+    </h2>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>질문</th>
+          <th>결과</th>
+        </tr>
+      </thead>
+
+      <tbody
+        id="failureTable"
+      >
+      </tbody>
+
+    </table>
+
+  </section>
+
+  <section>
+
+    <h2>
+      고객용 요약
+    </h2>
+
+    <div
+      class="card"
+      id="clientSummary"
+    >
+    </div>
+
+  </section>
+
+</div>
+
+<script>
+
+function seconds(ms) {
+  if (!ms) return "-";
+
+  return (
+    ms / 1000
+  ).toFixed(1) + "초";
+}
+
+function statusClass(rate) {
+  if (rate >= 95)
+    return "good";
+
+  if (rate >= 80)
+    return "warning";
+
+  return "bad";
+}
+
+async function load() {
+
+  const response =
+    await fetch(
+      "/api/data"
+    );
+
+  const data =
+    await response.json();
+
+  const regression =
+    data.regression;
+
+  const security =
+    data.security;
+
+  const qwen8b =
+    data.benchmarks.qwen8b;
+
+  const qwen4b =
+    data.benchmarks.qwen4b;
+
+  // ----------------------------
+  // SUMMARY
+  // ----------------------------
+
+  const summaryCards =
+    document.getElementById(
+      "summaryCards"
+    );
+
+  const cards = [
+    {
+      label:
+        "회귀 테스트",
+      value:
+        regression?.totalTests ?? "-",
+    },
+
+    {
+      label:
+        "회귀 테스트 통과",
+      value:
+        regression?.passedTests ?? "-",
+    },
+
+    {
+      label:
+        "회귀 테스트 통과율",
+      value:
+        regression
+          ? regression.passRate + "%"
+          : "-",
+
+      className:
+        regression
+          ? statusClass(
+              regression.passRate
+            )
+          : "",
+    },
+
+    {
+      label:
+        "보안 테스트 통과율",
+      value:
+        security
+          ? security.passRate + "%"
+          : "-",
+
+      className:
+        security
+          ? statusClass(
+              security.passRate
+            )
+          : "",
+    },
+  ];
+
+  summaryCards.innerHTML =
+    cards.map(
+      card => `
+        <div class="card">
+
+          <div class="label">
+            ${card.label}
+          </div>
+
+          <div class="value ${card.className ?? ""}">
+            ${card.value}
+          </div>
+
+        </div>
+      `
+    ).join("");
+
+  // ----------------------------
+  // MODEL BENCHMARK
+  // ----------------------------
+
+  const benchmarkTable =
+    document.getElementById(
+      "benchmarkTable"
+    );
+
+  const models =
+    [qwen8b, qwen4b]
+      .filter(Boolean);
+
+  benchmarkTable.innerHTML =
+    models.map(
+      model => `
+
+      <tr>
+
+        <td>
+          ${model.model}
+        </td>
+
+        <td>
+          ${model.totalTests}
+        </td>
+
+        <td class="${statusClass(model.passRate)}">
+          ${model.passRate}%
+        </td>
+
+        <td>
+          ${seconds(
+            model.averageDurationMs
+          )}
+        </td>
+
+        <td>
+          ${model.failed}
+        </td>
+
+      </tr>
+
+      `
+    ).join("");
+
+  // ----------------------------
+  // SECURITY
+  // ----------------------------
+
+  const securityCards =
+    document.getElementById(
+      "securityCards"
+    );
+
+  if (security) {
+
+    securityCards.innerHTML = `
+
+      <div class="card">
+
+        <div class="label">
+          전체 보안 테스트
+        </div>
+
+        <div class="value">
+          ${security.total}
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="label">
+          보안 테스트 통과
+        </div>
+
+        <div class="value good">
+          ${security.passed}
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="label">
+          보안 테스트 실패
+        </div>
+
+        <div class="value ${
+          security.failed === 0
+            ? "good"
+            : "bad"
+        }">
+          ${security.failed}
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="label">
+          보안 통과율
+        </div>
+
+        <div class="value ${statusClass(security.passRate)}">
+          ${security.passRate}%
+        </div>
+
+      </div>
+
+    `;
+  }
+
+  // ----------------------------
+  // FAILURES
+  // ----------------------------
+
+  const failures =
+    regression?.results
+      ?.filter(
+        result =>
+          !result.pass
+      ) ?? [];
+
+  const failureTable =
+    document.getElementById(
+      "failureTable"
+    );
+
+  if (
+    failures.length === 0
+  ) {
+
+    failureTable.innerHTML = `
+
+      <tr>
+
+        <td colspan="3">
+
+          <span class="status status-pass">
+            현재 실패 테스트 없음
+          </span>
+
+        </td>
+
+      </tr>
+
+    `;
+
+  } else {
+
+    failureTable.innerHTML =
+      failures.map(
+        failure => `
+
+        <tr>
+
+          <td>
+            ${failure.id}
+          </td>
+
+          <td>
+            ${failure.question}
+          </td>
+
+          <td>
+
+            <span class="status status-fail">
+              FAIL
+            </span>
+
+          </td>
+
+        </tr>
+
+        `
+      ).join("");
+  }
+
+  // ----------------------------
+  // CLIENT SUMMARY
+  // ----------------------------
+
+  const clientSummary =
+    document.getElementById(
+      "clientSummary"
+    );
+
+  clientSummary.innerHTML = `
+
+    <p>
+      총
+      <strong>
+        ${regression?.totalTests ?? "-"}개
+      </strong>
+      회귀 테스트를 실행했습니다.
+    </p>
+
+    <p>
+      현재 Agent의 테스트 통과율은
+      <strong>
+        ${regression?.passRate ?? "-"}%
+      </strong>
+      입니다.
+    </p>
+
+    <p>
+      보안 테스트는
+      <strong>
+        ${security?.passed ?? "-"}
+        /
+        ${security?.total ?? "-"}
+      </strong>
+      통과했습니다.
+    </p>
+
+    <p>
+      기준 모델
+      <strong>
+        ${qwen8b?.model ?? "-"}
+      </strong>
+      의 평균 실행시간은
+      <strong>
+        ${seconds(
+          qwen8b?.averageDurationMs
+        )}
+      </strong>
+      입니다.
+    </p>
+
+    <p>
+      비교 모델
+      <strong>
+        ${qwen4b?.model ?? "-"}
+      </strong>
+      의 통과율은
+      <strong>
+        ${qwen4b?.passRate ?? "-"}%
+      </strong>,
+      평균 실행시간은
+      <strong>
+        ${seconds(
+          qwen4b?.averageDurationMs
+        )}
+      </strong>
+      입니다.
+    </p>
+
+  `;
+}
+
+load();
+
+</script>
+
+</body>
+</html>
